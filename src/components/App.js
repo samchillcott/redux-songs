@@ -1,5 +1,5 @@
 import React from 'react';
-import { SongList } from './SongList';
+import SongList from './SongList';
 
 function App() {
     return (

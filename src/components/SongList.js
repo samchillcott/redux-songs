@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {connect} from 'react-redux';
 
-export default class SongList extends Component {
+class SongList extends Component {
     render() {
         return (
             <div>
@@ -9,3 +10,10 @@ export default class SongList extends Component {
         )
     }
 }
+
+const mapStateToProps = (state) => {
+console.log(state);
+return state;
+}
+
+export default connect(mapStateToProps)(SongList);
