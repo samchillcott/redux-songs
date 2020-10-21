@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
 class SongList extends Component {
     render() {
@@ -12,8 +12,8 @@ class SongList extends Component {
 }
 
 const mapStateToProps = (state) => {
-console.log(state);
-return state;
+    console.log(state);
+    return state;
 }
 
 export default connect(mapStateToProps)(SongList);
